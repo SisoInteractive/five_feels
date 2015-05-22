@@ -1,0 +1,646 @@
+@charset "utf-8";
+
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html {
+  color: #555;
+  background: #f2ebdb;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: none;
+}
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+}
+
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 媒体文件跟 img 保持一致 */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+body, button, input, select, textarea {
+  font:500 14px/1.8 Lucida,Verdana,Hiragino Sans GB,WenQuanYi Micro Hei,sans-serif;
+}
+
+/* IE6 Button 宽度自适应 */
+button, input {
+  *width: auto;
+  *overflow:visible;
+}
+
+/* 去掉各Table  cell 的边距并让其边重合 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* IE bug fixed: th 不继承 text-align*/
+th {
+  text-align: inherit;
+}
+
+/* 去除默认边框 */
+fieldset, img {
+  border: 0;
+}
+
+/* 解决 IE6-7 图片缩放锯齿问题 */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe {
+  display: block;
+}
+
+/* 块/段落引用 */
+blockquote {
+  margin: 1em 4em 1em 2em;
+  padding: 0.6em 1em;
+  background: #f1f1f1;
+}
+blockquote blockquote {
+  padding: 0 0 0 1em;
+  margin-left: 2em;
+  border-left: 0.4em solid #ddd;
+}
+
+/* Firefox 以外，元素没有下划线，需添加 */
+acronym, abbr {
+  border-bottom: 1px dotted;
+  font-variant: normal;
+}
+
+/* 添加鼠标问号，进一步确保应用的语义是正确的（要知道，交互他们也有洁癖，如果你不去掉，那得多花点口舌） */
+abbr {
+  cursor: help;
+}
+
+/* 一致的 del 样式 */
+del {
+  text-decoration: line-through;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* 去掉列表前的标识, li 会继承，大部分网站通常用列表来很多内容，所以应该当去 */
+ul, ol {
+  list-style: none;
+}
+i{
+  font-style: normal;
+}
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption, th {
+  text-align: left;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+/* 统一上标和下标 */
+
+:root sub, :root sup{
+  vertical-align: baseline; /* for ie9 and other mordern browsers */
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+/* 让链接在 hover 状态下显示下划线 */
+a:hover {
+}
+
+/* 默认不显示下划线，保持页面简洁 */
+ins, a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* 专名号：虽然 u 已经重回 html5 Draft，但在所有浏览器中都是可以使用的，
+ * 要做到更好，向后兼容的话，添加 class="typo-u" 来显示专名号
+ * 关于 <u> 标签：http://www.whatwg.org/specs/web-apps/current-work/multipage/text-level-semantics.html#the-u-element
+ * 被放弃的是 4，之前一直搞错 http://www.w3.org/TR/html401/appendix/changes.html#idx-deprecated
+ * 一篇关于 <u> 标签的很好文章：http://html5doctor.com/u-element/
+ */
+u, .typo-u {
+  text-decoration: underline;
+}
+
+/* 标记，类似于手写的荧光笔的作用 */
+mark {
+  background: #fffdd1;
+}
+
+/* 代码片断 */
+pre, code {
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+pre {
+  border: 1px solid #ddd;
+  border-left-width: 0.4em;
+  background: #fbfbfb;
+  padding: 10px;
+}
+
+/* 底部印刷体、版本等标记 */
+small {
+  font-size: 12px;
+  color: #888;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both
+}
+
+.clearfix {
+  zoom: 1
+}
+
+/* 保证块/段落之间的空白隔行 */
+.typo p, .typo pre, .typo ul, .typo ol, .typo dl, .typo form, .typo hr, .typo table,
+.typo-p, .typo-pre, .typo-ul, .typo-ol, .typo-dl, .typo-form, .typo-hr, .typo-table {
+  margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: 500;
+  font-weight: 800\9;
+  color:#333;
+}
+
+/* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 */
+.typo h1, .typo h2, .typo h3, .typo h4, .typo h5, .typo h6,
+.typo-h1, .typo-h2, .typo-h3, .typo-h4, .typo-h5, .typo-h6 {
+  margin-bottom: 0.4em;
+  line-height: 1.5;
+}
+.typo h1, .typo-h1 {
+  font-size: 1.8em;
+}
+.typo h2, .typo-h2 {
+  font-size: 1.6em;
+}
+.typo h3, .typo-h3 {
+  font-size: 1.4em;
+}
+.typo h4, .typo-h4 {
+  font-size: 1.2em;
+}
+.typo h5, .typo h6, .typo-h5, .typo-h6 {
+  font-size: 1em;
+}
+
+/* 在文章中，应该还原 ul 和 ol 的样式 */
+.typo ul, .typo-ul {
+  margin-left: 1.3em;
+  list-style: disc;
+}
+.typo ol, .typo-ol {
+  list-style: decimal;
+  margin-left: 1.9em;
+}
+.typo li ul, .typo li ol, .typo-ul ul, .typo-ul ol, .typo-ol ul, .typo-ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2em;
+}
+.typo li ul, .typo-ul ul, .typo-ol ul {
+  list-style: circle;
+}
+
+/* 同 ul/ol，在文章中应用 table 基本格式 */
+.typo table th, .typo table td, .typo-table th, .typo-table td {
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+}
+.typo table th, .typo-table th {
+  background: #fbfbfb;
+}
+.typo table thead th, .typo-table thead th {
+  background: #f1f1f1;
+}
+
+/* 去除 webkit 中 input 和 textarea 的默认样式  */
+.typo-input, .typo-textarea{
+  -webkit-appearance:none;
+  border-radius:0;
+}
+
+/* TODO: 供着重号使用 */
+.typo-em, .typo em {
+  font-weight: 700;
+}
+
+/* TODO: 供首字下沉使用 */
+.typo-first{
+  position: absolute;
+
+}
+*{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+  outline: none;
+}
+input:-moz-placeholder, textarea:-moz-placeholder { color: #ccc; }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #ccc; }
+input:-webkit-input-placeholder, textarea:-webkit-input-placeholder { color: #ccc; }
+
+input{-webkit-appearance:none;/*去除input默认样式*/}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="input"],
+input{-webkit-appearance:none;}
+
+input{
+  -webkit-appearance:none!important;
+  border-radius:0;
+}
+input:focus{
+  transition:border linear .2s,box-shadow linear .5s;
+  -moz-transition:border linear .2s,-moz-box-shadow linear .5s;
+  -webkit-transition:border linear .2s,-webkit-box-shadow linear .5s;
+  outline:none;
+  box-shadow:0 0 3px #f58282;
+  -moz-box-shadow:0 0 3px #f58282;
+  -webkit-box-shadow:0 0 3px #f58282;
+  border: 1px solid #f58282!important;
+}
+
+select{
+  -webkit-appearance:none!important;
+  border-radius:0;
+  -webkit-appearance: menulist;
+  -webkit-box-sizing: border-box;
+  -webkit-box-align: center;
+  border: 1px solid;
+  white-space: pre;
+  -webkit-rtl-ordering: logical;
+  background-color: white;
+  cursor: default;
+}
+
+
+/* 结构类common */
+.container{
+  width: 100%;
+  height: 100%;
+  min-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+.row{
+  position: relative;
+}
+/* 基类样式 shadow */
+.shadow{
+  -moz-box-shadow: 0px 2px 2px #e7e7e7;
+  -webkit-box-shadow: 0px 2px 2px #e7e7e7;
+  box-shadow: 0px 2px 2px #e7e7e7;
+}
+
+/* 图标等图片垂直居中后的处理 */
+.top1{  position: relative;  top: -0.05rem; }
+
+.renQ{ color: #f3484a!important;}
+.redS{ color: #e14041!important; }
+.cor999{ color: #999 !important; }
+.cor555{ color: #555 !important; }
+.cor333{ color: #333 !important; }
+.corbbb{ color: #bbb !important; }
+.coraaa{ color: #aaa !important; }
+.Cgray{ color: #aaa!important; }
+.width100{ width: 100%;}
+.width66{ width: 66.37%;}
+.width33{ width: 33%;}
+
+.fl-l{ float: left ;}
+.fl-r{ float: right;}
+
+/*通用变量*/
+@unit2 :0.05rem!important;
+@unit4 :0.10rem!important;
+@unit6 :0.15rem!important;
+@unit8 :0.2rem !important;
+@unit10:0.25rem!important;
+@unit12:0.30rem!important;
+@unit14:0.35rem!important;
+@unit16:0.40rem!important;
+@unit18:0.45rem!important;
+@unit20:0.50rem!important;
+@unit22:0.55rem!important;
+@unit24:0.60rem!important;
+@unit26:0.65rem!important;
+@unit28:0.70rem!important;
+@unit30:0.75rem!important;
+@unit32:0.80rem!important;
+@unit34:0.85rem!important;
+@unit36:0.90rem!important;
+@unit38:0.95rem!important;
+@unit40:1.00rem!important;
+@unit42:1.05rem!important;
+@unit44:1.10rem!important;
+@unit46:1.15rem!important;
+@unit48:1.20rem!important;
+@unit50:1.25rem!important;
+
+
+
+/* 全局：动画变动效果 */
+*{
+//  -webkit-transition: all .25s;
+//  -moz-transition: all .25s;
+//  -ms-transition: all .25s;
+//  -o-transition: all .25s;
+//  transition: all .25s;
+}
+
+
+/* index css */
+
+.swiper-slide{
+  img{
+    position: absolute;
+  }
+  .wangzuo{
+    top: 117px;
+    left: 89px;
+  }
+  .wangyou{
+    left: 160px;
+    top: 122px;
+  }
+
+  .chushang{
+    top: 199px;
+    left: 122px;
+  }
+  .chuxia{
+    top: 228px;
+    left: 127px;
+  }
+  .fengtou{
+    left: 186px;
+    top: 205px;
+  }
+  .fengxia{
+    left:206px;
+    top: 241px;
+  }
+  .touzuo{
+    left: 104px;
+    top: 287px;
+  }
+  .touyou{
+    top: 293px;
+    left: 155px;
+
+  }
+  .s1{
+    top: 221px;
+    left: 95px;
+  }
+  .s1-2{
+    top: 237px;
+    left: 110px;
+  }
+  .s1-3{
+    top: 239px;
+    left: 98px;
+  }
+  .s1-4{
+    top: 256px;
+    left: 112px;
+  }
+  .s1-5{
+    top: 262px;
+    left: 116px;
+
+  }
+  .s2{
+    top: 246px;
+    left: 78px;
+  }
+  .z1{
+    top: 260px;
+    left: 103px;
+  }
+
+  .w1{
+    top: 157px;
+    left: 78px;
+  }
+  .w1-2{
+    top: 170px;
+    left: 78px;
+  }
+  .w1-3{
+    top: 173px;
+    left: 84px;
+  }
+  .w1-4{
+    top: 179px;
+    left: 84px;
+  }
+
+  .yArr{
+    top: 385px;
+    left: 118px;
+  }
+  .yArr-01{
+    top: 376px;
+    left: 108px;
+  }
+  .yArr-02{
+    top: 398px;
+    left: 148px;
+  }
+  .yArr-03{
+    left: 133px;
+    top: 413px;
+  }
+  .yArr-04{
+    left: 137px;
+    top: 419px;
+  }
+  .f1{
+    left: 271px;
+    top: 202px;
+  }
+  .f2{
+    left: 74px;
+    top: 392px;
+  }
+  .text{
+    left: 253px;
+    top: 333px;
+  }
+  .logo{
+    top: 454px;
+    left: 143px;
+  }
+  .down{
+    left: 50%;
+    margin-left: -50px;
+    bottom: 10%;
+  }
+}
+
+/* scene01 */
+.scene01 {
+  .s1-2{
+    transform:rotate(12deg);
+    -ms-transform:rotate(12deg); 	/* IE 9 */
+    -moz-transform:rotate(12deg); 	/* Firefox */
+    -webkit-transform:rotate(12deg); /* Safari 和 Chrome */
+    -o-transform:rotate(12deg);
+  }
+  .s1-3{
+    transform:rotate(10deg);
+    -ms-transform:rotate(10deg); 	/* IE 9 */
+    -moz-transform:rotate(10deg); 	/* Firefox */
+    -webkit-transform:rotate(10deg); /* Safari 和 Chrome */
+    -o-transform:rotate(10deg);
+    -webkit-animation: topD 4s infinite linear ;
+  }
+  .s1-4{
+    -webkit-animation: xuanZ 6s infinite linear ;
+  }
+  .s1-5{
+    transform:rotate(10deg);
+    -ms-transform:rotate(10deg); 	/* IE 9 */
+    -moz-transform:rotate(10deg); 	/* Firefox */
+    -webkit-transform:rotate(10deg); /* Safari 和 Chrome */
+    -o-transform:rotate(10deg);
+
+  }
+  .s2{
+    -webkit-animation: circle 14s infinite linear;
+
+  }
+  .z1{
+    -webkit-animation: rightD 13s infinite linear ;
+  }
+
+  .w1{
+    -webkit-animation: topD 4s infinite linear ; /* Chrome, Safari, Opera */
+  }
+  .w1-2{
+    -webkit-animation: leftD 5s infinite ease-out ; /* Chrome, Safari, Opera */
+  }
+  .w1-3{
+    -webkit-animation: bottomD 8s infinite ease-out ; /* Chrome, Safari, Opera */
+  }
+  .w1-4{
+    -webkit-animation: rightD 6s infinite linear ; /* Chrome, Safari, Opera */
+  }
+
+  .yArr{
+    -webkit-animation: rightD 13s infinite linear ;
+  }
+  .yArr-01{
+    -webkit-animation: rightD 22s infinite linear ;
+  }
+  .yArr-02{
+    -webkit-animation: leftD 7s infinite linear ;
+  }
+  .yArr-03{
+    -webkit-animation: topD 7s infinite linear ;
+  }
+  .yArr-04{
+    -webkit-animation: bottomD 5s infinite linear ;
+  }
+}
+
+
+
+@-webkit-keyframes topD {
+  0%   {-webkit-transform: translate(0px);}
+  50%   {-webkit-transform: translate(5px,5px)}
+  100%   {-webkit-transform: translate(0px);}
+}
+@-webkit-keyframes leftD {
+  0%   {-webkit-transform: translate(0px);}
+  50%   {-webkit-transform: translate(-5px,-5px)}
+  100%   {-webkit-transform: translate(0px);}
+}
+@-webkit-keyframes bottomD {
+  0%   {-webkit-transform: translate(0px);}
+  50%   {-webkit-transform: translate(5px,-5px)}
+  100%   {-webkit-transform: translate(0px);}
+}
+@-webkit-keyframes rightD {
+  0%   {-webkit-transform: translate(0px);}
+  50%   {-webkit-transform: translate(-5px,12px)}
+  100%   {-webkit-transform: translate(0px);}
+}
+
+@-webkit-keyframes xuanZ {
+  0%   {-webkit-transform: translate(0px);}
+  50%  {
+    -webkit-transform: translate(2px,7px);
+    -webkit-transform:rotate(260deg);
+    transform:rotate(260deg);
+  }
+  100%   {-webkit-transform: translate(0px);}
+}
+
+@-webkit-keyframes circle {
+  0% {   -webkit-transform: rotateZ(0deg)    }
+  100% {        -webkit-transform: rotateZ(360deg)    }
+}
+@keyframes ccircle {
+  from {        transform: rotateZ(360deg)    }
+  to {        transform: rotateZ(0deg)    }
+}
+@-webkit-keyframes ccircle {
+  from { -webkit-transform: rotateZ(360deg) }
+  to   { -webkit-transform: rotateZ(0deg)   }
+}
+
+// 定义动画
+.up_{
+  -webkit-animation: up_d 5s alternate;
+}
+
+@-webkit-keyframes up_d {
+  from {        transform: translate(-0px,0px)    }
+  to {        transform: translate(-5px,12px)    }
+}
+
+.down_{
+  -webkit-animation: down_d 5s alternate;
+}
+
+@-webkit-keyframes down_d {
+  from {        transform: translate(0px,0px)    }
+  to {        transform: translate(5px,-12px)      }
+}

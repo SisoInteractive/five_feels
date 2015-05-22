@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html ID="html">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title></title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=375,maximum-scale=1.3,user-scalable=no,minimal-ui"/>
+    <meta name="apple-touch-fullscreen" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- js -->
+    <script src="js/jqueyr-2.1.1.js"></script>
+    <!-- less compiler -->
+    <script src="js/less.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #f2ebdb;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .block-content *{
+            opacity: 0;
+            transform: translate3d(0, -600%, 0);
+            -webkit-transform: translate3d(0, -600%, 0);
+        }
+
+        .block-content.moveToNextScene * {
+            opacity: 1;
+            transform: translate3d(0, 800px, 0);
+            -webkit-transform: translate3d(0, 800px, 0);
+            transition: transform 5s;
+            -webkit-transition: -webkit-transform 5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide scene01">
+                    <img src="images/wangzuo.png" style="width: 71px;" class="wangzuo " data-swiper-parallax="180">
+                    <img src="images/wangyou.png" style="width: 72px;" class="wangyou " data-swiper-parallax="400">
+                    <img src="images/chushang.png" style="width: 40px;" class="chushang" data-swiper-parallax="200">
+                    <img src="images/chuxia.png" style="width: 48px;" class="chuxia" data-swiper-parallax="100">
+                    <img src="images/fengtou.png" style="width: 134px;" class="fengtou" data-swiper-parallax="300">
+                    <img src="images/fengxia.png" style="width: 51px;" class="fengxia" data-swiper-parallax="100">
+                    <img src="images/touzuo.png" style="width: 62px;" class="touzuo" data-swiper-parallax="300">
+                    <img src="images/touyou.png" style="width: 70px;" class="touyou" data-swiper-parallax="-400">
+
+                    <!-- 玩字 -->
+                    <img src="images/w1.png" width="4" class="w1">
+                    <img src="images/w1.png" width="2" class="w1-2">
+                    <img src="images/w1.png" width="3" class="w1-3">
+                    <img src="images/w1.png" width="4" class="w1-4">
+                    <!-- 出字碎片 -->
+                    <img src="images/s1.png" width="9" class="s1">
+                    <img src="images/s1.png" width="6" class="s1-2" data-swiper-parallax="400">
+                    <img src="images/s1.png" width="4" class="s1-3" data-swiper-parallax="400">
+                    <img src="images/s1.png" width="4" class="s1-4" data-swiper-parallax="400">
+                    <img src="images/s1.png" width="4" class="s1-5" data-swiper-parallax="400">
+                    <img src="images/s2.png" width="15" class="s2" data-swiper-parallax="400" >
+                    <img src="images/z1.png" width="6" class="z1">
+                    <!-- 头 -->
+                    <img src="images/yArr.png" width="75" class="yArr" data-swiper-parallax="400">
+                    <img src="images/y1.png" width="7" class="yArr-01">
+                    <img src="images/y1.png" width="5" class="yArr-02">
+                    <img src="images/y1.png" width="4" class="yArr-03">
+                    <img src="images/y1.png" width="4" class="yArr-04">
+
+                    <!-- 风线 -->
+                    <img src="images/feng1.png" width="36" class="f1">
+                    <img src="images/feng2.png" width="59" class="f2">
+                    <!-- 文字 -->
+                    <img src="images/text.png" width="19" class="text" data-swiper-parallax="-400">
+                    <!-- logo -->
+                    <img src="images/logo.png" width="76" class="logo" data-swiper-parallax="300">
+                    <!-- up down -->
+                    <img src="images/updown.png" width="99" class="down">
+                </div>
+                <div class="swiper-slide scene02" >
+                    <div class="block-content">
+                        <img src="images/wangzuo.png" style="width: 71px;" class="wangzuo ">
+                        <img src="images/wangyou.png" style="width: 72px;" class="wangyou ">
+                        <img src="images/chushang.png" style="width: 40px;" class="chushang">
+                        <img src="images/chuxia.png" style="width: 48px;" class="chuxia">
+                        <img src="images/fengtou.png" style="width: 134px;" class="fengtou" >
+                        <img src="images/fengxia.png" style="width: 51px;" class="fengxia">
+                        <img src="images/touzuo.png" style="width: 62px;" class="touzuo">
+                        <img src="images/touyou.png" style="width: 70px;" class="touyou">
+
+                        <!-- 玩字 -->
+                        <img src="images/w1.png" width="4" class="w1">
+                        <img src="images/w1.png" width="2" class="w1-2">
+                        <img src="images/w1.png" width="3" class="w1-3">
+                        <img src="images/w1.png" width="4" class="w1-4">
+                        <!-- 出字碎片 -->
+                        <img src="images/s1.png" width="9" class="s1">
+                        <img src="images/s1.png" width="6" class="s1-2">
+                        <img src="images/s1.png" width="4" class="s1-3">
+                        <img src="images/s1.png" width="4" class="s1-4">
+                        <img src="images/s1.png" width="4" class="s1-5">
+                        <img src="images/s2.png" width="15" class="s2">
+                        <img src="images/z1.png" width="6" class="z1">
+                        <!-- 头 -->
+                        <img src="images/yArr.png" width="75" class="yArr">
+                        <img src="images/y1.png" width="7" class="yArr-01">
+                        <img src="images/y1.png" width="5" class="yArr-02">
+                        <img src="images/y1.png" width="4" class="yArr-03">
+                        <img src="images/y1.png" width="4" class="yArr-04">
+
+                        <!-- 风线 -->
+                        <img src="images/feng1.png" width="36" class="f1">
+                        <img src="images/feng2.png" width="59" class="f2">
+                    </div>
+                </div>
+                <div class="swiper-slide scene03" >Slide 2</div>
+            </div>
+
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="js/swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var mySwiper = new Swiper('.swiper-container', {
+                paginationClickable: true,
+                direction: 'vertical',
+                speed: 1000,
+                spaceBetween: 100,
+                noSwiping:true,
+                parallax:true
+            });
+
+            var startX;
+            var setTimeout1;
+            var setTimeout2;
+
+            mySwiper.on('onTouchStart', function (swiper, e) {
+                //mySwiper.lockSwipeToPrev()
+                var startX=e.changedTouches[0].pageY;
+            });
+
+            mySwiper.on('onTouchMove', function (swiper, e) {
+                //mySwiper.lockSwipeToPrev()
+                clearTimeout(setTimeout1);
+                clearTimeout(setTimeout2);
+            });
+
+            mySwiper.on('onTransitionEnd', function (swiper){
+                console.log(swiper.activeIndex);
+                if (swiper.activeIndex == 1) {
+                    $('.scene02 .block-content').addClass('moveToNextScene');
+                    $('.block-content.moveToNextScene').show();
+                    $('.scene02 .block-content').show();
+                    setTimeout1 = setTimeout(function (){
+                        $('.block-content.moveToNextScene').fadeOut(900);
+                        setTimeout2 = setTimeout(function (){
+                            mySwiper.slideNext();
+                        }, 800);
+                    }, 1300);
+                }
+                if (swiper.activeIndex == 0) {
+                    $('.scene02 .block-content').removeClass('moveToNextScene');
+                    $('.scene02 .block-content').show();
+                    clearTimeout(setTimeout1);
+                    clearTimeout(setTimeout2);
+                }
+                if (swiper.activeIndex == 2) {
+                    $('.scene02 .block-content').removeClass('moveToNextScene');
+                    $('.scene02 .block-content').show();
+                    clearTimeout(setTimeout1);
+                    clearTimeout(setTimeout2);
+                }
+
+            });
+
+        </script>
+    </div>
+
+</body>
+</html>
