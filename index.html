@@ -42,10 +42,18 @@
         }
 
         .block-content.moveToNextScene * {
+             opacity: 1;
+             -webkit-transform: translate3d(0,800px,0px) rotateZ(0deg);
+             -webkit-transition: -webkit-transform 5s;
+         }
+        .scene02 .block-content.moveToNextScene .wangyou{
             opacity: 1;
-            transform: translate3d(0, 800px, 0);
-            -webkit-transform: translate3d(0, 800px, 0);
-            transition: transform 5s;
+            -webkit-transform: translate3d(0,800px,0px) rotateZ(130deg);
+            -webkit-transition: -webkit-transform 5s;
+        }
+        .scene02 .block-content.moveToNextScene .touzuo{
+            opacity: 1;
+            -webkit-transform: translate3d(0,800px,0px) rotateZ(80deg);
             -webkit-transition: -webkit-transform 5s;
         }
     </style>
@@ -59,85 +67,86 @@
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide scene01">
-                    <img src="images/wangzuo.png" style="width: 71px;" class="wangzuo " data-swiper-parallax="180">
-                    <img src="images/wangyou.png" style="width: 72px;" class="wangyou " data-swiper-parallax="400">
-                    <img src="images/chushang.png" style="width: 40px;" class="chushang" data-swiper-parallax="200">
-                    <img src="images/chuxia.png" style="width: 48px;" class="chuxia" data-swiper-parallax="100">
-                    <img src="images/fengtou.png" style="width: 134px;" class="fengtou" data-swiper-parallax="300">
-                    <img src="images/fengxia.png" style="width: 51px;" class="fengxia" data-swiper-parallax="100">
-                    <img src="images/touzuo.png" style="width: 62px;" class="touzuo" data-swiper-parallax="300">
-                    <img src="images/touyou.png" style="width: 70px;" class="touyou" data-swiper-parallax="-400">
+                    <img src="images/scene/wangzuo.png" style="width: 71px;" class="wangzuo " data-swiper-parallax="180" >
+                    <img src="images/scene/wangyou.png" style="width: 72px;" class="wangyou " data-swiper-parallax="400">
+                    <img src="images/scene/chushang.png" style="width: 40px;" class="chushang" data-swiper-parallax="200">
+                    <img src="images/scene/chuxia.png" style="width: 48px;" class="chuxia" data-swiper-parallax="100">
+                    <img src="images/scene/fengtou.png" style="width: 134px;" class="fengtou" data-swiper-parallax="300">
+                    <img src="images/scene/fengxia.png" style="width: 51px;" class="fengxia" data-swiper-parallax="100">
+                    <img src="images/scene/touzuo.png" style="width: 62px;" class="touzuo" data-swiper-parallax="300">
+                    <img src="images/scene/touyou.png" style="width: 70px;" class="touyou" data-swiper-parallax="-400">
 
                     <!-- 玩字 -->
-                    <img src="images/w1.png" width="4" class="w1">
-                    <img src="images/w1.png" width="2" class="w1-2">
-                    <img src="images/w1.png" width="3" class="w1-3">
-                    <img src="images/w1.png" width="4" class="w1-4">
+                    <img src="images/scene/w1.png" width="4" class="w1">
+                    <img src="images/scene/w1.png" width="2" class="w1-2">
+                    <img src="images/scene/w1.png" width="3" class="w1-3">
+                    <img src="images/scene/w1.png" width="4" class="w1-4">
                     <!-- 出字碎片 -->
-                    <img src="images/s1.png" width="9" class="s1">
-                    <img src="images/s1.png" width="6" class="s1-2" data-swiper-parallax="400">
-                    <img src="images/s1.png" width="4" class="s1-3" data-swiper-parallax="400">
-                    <img src="images/s1.png" width="4" class="s1-4" data-swiper-parallax="400">
-                    <img src="images/s1.png" width="4" class="s1-5" data-swiper-parallax="400">
-                    <img src="images/s2.png" width="15" class="s2" data-swiper-parallax="400" >
-                    <img src="images/z1.png" width="6" class="z1">
+                    <img src="images/scene/s1.png" width="9" class="s1">
+                    <img src="images/scene/s1.png" width="6" class="s1-2" data-swiper-parallax="400">
+                    <img src="images/scene/s1.png" width="4" class="s1-3" data-swiper-parallax="400">
+                    <img src="images/scene/s1.png" width="4" class="s1-4" data-swiper-parallax="400">
+                    <img src="images/scene/s1.png" width="4" class="s1-5" data-swiper-parallax="400">
+                    <img src="images/scene/s2.png" width="15" class="s2" data-swiper-parallax="400" >
+                    <img src="images/scene/z1.png" width="6" class="z1">
                     <!-- 头 -->
-                    <img src="images/yArr.png" width="75" class="yArr" data-swiper-parallax="400">
-                    <img src="images/y1.png" width="7" class="yArr-01">
-                    <img src="images/y1.png" width="5" class="yArr-02">
-                    <img src="images/y1.png" width="4" class="yArr-03">
-                    <img src="images/y1.png" width="4" class="yArr-04">
+                    <img src="images/scene/yArr.png" width="75" class="yArr" data-swiper-parallax="400">
+                    <img src="images/scene/y1.png" width="7" class="yArr-01" style="">
+                    <img src="images/scene/y1.png" width="5" class="yArr-02">
+                    <img src="images/scene/y1.png" width="4" class="yArr-03">
+                    <img src="images/scene/y1.png" width="4" class="yArr-04">
 
                     <!-- 风线 -->
-                    <img src="images/feng1.png" width="36" class="f1">
-                    <img src="images/feng2.png" width="59" class="f2">
+                    <img src="images/scene/feng1.png" width="36" class="f1">
+                    <img src="images/scene/feng2.png" width="59" class="f2">
                     <!-- 文字 -->
-                    <img src="images/text.png" width="19" class="text" data-swiper-parallax="-400">
-                    <!-- logo -->
-                    <img src="images/logo.png" width="76" class="logo" data-swiper-parallax="300">
+                    <img src="images/scene/text.png" width="19" class="text" data-swiper-parallax="-400">
                     <!-- up down -->
-                    <img src="images/updown.png" width="99" class="down">
+                    <img src="images/scene/updown.png" width="99" class="down" data-swiper-parallax="200">
+
+                    <!-- logo -->
+                    <img src="images/scene/logo.png" width="76" class="logo" data-swiper-parallax="100">
                 </div>
 
 
-                <div class="swiper-slide scene02"  >
+                <div class="swiper-slide scene02"   >
                     <div class="block-content">
-                        <img src="images/wangzuo.png" style="width: 71px;" class="wangzuo ">
-                        <img src="images/wangyou.png" style="width: 72px;" class="wangyou ">
-                        <img src="images/chushang.png" style="width: 40px;" class="chushang">
-                        <img src="images/chuxia.png" style="width: 48px;" class="chuxia">
-                        <img src="images/fengtou.png" style="width: 134px;" class="fengtou" >
-                        <img src="images/fengxia.png" style="width: 51px;" class="fengxia">
-                        <img src="images/touzuo.png" style="width: 62px;" class="touzuo">
-                        <img src="images/touyou.png" style="width: 70px;" class="touyou">
+                        <img src="images/scene/wangzuo.png" style="width: 71px;" class="wangzuo" >
+                        <img src="images/scene/wangyou.png" style="width: 72px;" class="wangyou ">
+                        <img src="images/scene/chushang.png" style="width: 40px;" class="chushang">
+                        <img src="images/scene/chuxia.png" style="width: 48px;" class="chuxia">
+                        <img src="images/scene/fengtou.png" style="width: 134px;" class="fengtou" >
+                        <img src="images/scene/fengxia.png" style="width: 51px;" class="fengxia">
+                        <img src="images/scene/touzuo.png" style="width: 62px;" class="touzuo">
+                        <img src="images/scene/touyou.png" style="width: 70px;" class="touyou">
 
                         <!-- 玩字 -->
-                        <img src="images/w1.png" width="4" class="w1">
-                        <img src="images/w1.png" width="2" class="w1-2">
-                        <img src="images/w1.png" width="3" class="w1-3">
-                        <img src="images/w1.png" width="4" class="w1-4">
+                        <img src="images/scene/w1.png" width="4" class="w1">
+                        <img src="images/scene/w1.png" width="2" class="w1-2">
+                        <img src="images/scene/w1.png" width="3" class="w1-3">
+                        <img src="images/scene/w1.png" width="4" class="w1-4">
                         <!-- 出字碎片 -->
-                        <img src="images/s1.png" width="9" class="s1">
-                        <img src="images/s1.png" width="6" class="s1-2">
-                        <img src="images/s1.png" width="4" class="s1-3">
-                        <img src="images/s1.png" width="4" class="s1-4">
-                        <img src="images/s1.png" width="4" class="s1-5">
-                        <img src="images/s2.png" width="15" class="s2">
-                        <img src="images/z1.png" width="6" class="z1">
+                        <img src="images/scene/s1.png" width="9" class="s1">
+                        <img src="images/scene/s1.png" width="6" class="s1-2">
+                        <img src="images/scene/s1.png" width="4" class="s1-3">
+                        <img src="images/scene/s1.png" width="4" class="s1-4">
+                        <img src="images/scene/s1.png" width="4" class="s1-5">
+                        <img src="images/scene/s2.png" width="15" class="s2">
+                        <img src="images/scene/z1.png" width="6" class="z1">
                         <!-- 头 -->
-                        <img src="images/yArr.png" width="75" class="yArr">
-                        <img src="images/y1.png" width="7" class="yArr-01">
-                        <img src="images/y1.png" width="5" class="yArr-02">
-                        <img src="images/y1.png" width="4" class="yArr-03">
-                        <img src="images/y1.png" width="4" class="yArr-04">
+                        <img src="images/scene/yArr.png" width="75" class="yArr">
+                        <img src="images/scene/y1.png" width="7" class="yArr-01">
+                        <img src="images/scene/y1.png" width="5" class="yArr-02">
+                        <img src="images/scene/y1.png" width="4" class="yArr-03">
+                        <img src="images/scene/y1.png" width="4" class="yArr-04">
 
                         <!-- 风线 -->
-                        <img src="images/feng1.png" width="36" class="f1">
-                        <img src="images/feng2.png" width="59" class="f2">
+                        <img src="images/scene/feng1.png" width="36" class="f1">
+                        <img src="images/scene/feng2.png" width="59" class="f2">
                     </div>
                 </div>
 
-                <div class="swiper-slide scene03 move"  >
+                <div class="swiper-slide scene03"  >
                     <div class="page3 " data-swiper-parallax="-180" style="display: none">
 
                         <img src="images/eye/eyeMian.png" width="264" class="eye_main" >
@@ -198,7 +207,69 @@
                     <div class="page3-text" style="display: none">
                         <img src="images/eye/text.png" width="122" alt=""/>
                     </div>
+                </div><!-- 03 -->
+
+                <div class="swiper-slide scene04"  >
+                    <div class="page4" data-swiper-parallax="-160">
+                        <img src="images/ehr/ear_main.png" width="302" class="ear_main">
+                    </div>
+
+                    <div class="page4-text">
+                        <img src="images/ehr/text.png" width="116">
+                    </div>
                 </div>
+
+                <div class="swiper-slide scene05"  >
+                    <div class="page5" data-swiper-parallax="-180">
+                        <img src="images/nose/nose_main.png" width="270" class="nose_main">
+                    </div>
+
+                    <div class="page5-text">
+                        <img src="images/nose/text.png" width="58">
+                    </div>
+                    <div class="page5-text01">
+                        <img src="images/nose/text1.png" width="64">
+                    </div>
+                </div>
+
+                <div class="swiper-slide scene06"  >
+
+                    <div class="page6" data-swiper-parallax="-180">
+                        <img src="images/mouth/mouth_main.png" width="293" class="mouth_main">
+                    </div>
+
+                    <div class="page6-text">
+                        <img src="images/mouth/text.png" width="279">
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide scene07"  >
+
+                    <div class="page7" data-swiper-parallax="-180">
+                        <img src="images/hand/hand_main.png" width="286" class="mouth_main">
+                    </div>
+
+                    <div class="page7-text">
+                        <img src="images/hand/text.png" width="116">
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide scene08"  >
+
+                    <div class="page8" data-swiper-parallax="-180">
+                        <span id="count_sum">98</span>
+                        <img src="images/scene/Tail_.png" width="191" class="Tail">
+                    </div>
+
+                    <div class="page8-text">
+                        <img src="images/scene/tail-text.png" width="256">
+                    </div>
+
+                </div>
+
+
             </div>
 
 
@@ -208,64 +279,20 @@
         <script src="js/swiper.min.js"></script>
 
         <!-- Initialize Swiper -->
+        <script src="js/countUp.min.js"></script>
         <script>
-            var mySwiper = new Swiper('.swiper-container', {
-                paginationClickable: true,
-                direction: 'vertical',
-                speed: 1000,
-                spaceBetween: 100,
-                noSwiping:true,
-                parallax:true
-            });
-
-            var startX;
-            var setTimeout1;
-            var setTimeout2;
-
-            mySwiper.on('onTouchStart', function (swiper, e) {
-                //mySwiper.lockSwipeToPrev()
-                var startX=e.changedTouches[0].pageY;
-            });
-
-            mySwiper.on('onTouchMove', function (swiper, e) {
-                //mySwiper.lockSwipeToPrev()
-                clearTimeout(setTimeout1);
-                clearTimeout(setTimeout2);
-            });
-
-            mySwiper.on('onTransitionEnd', function (swiper){
-                console.log(swiper.activeIndex);
-                if (swiper.activeIndex == 1) {
-                    $('.scene02 .block-content').addClass('moveToNextScene');
-                    $('.block-content.moveToNextScene').show();
-                    $('.scene02 .block-content').show();
-                    setTimeout1 = setTimeout(function (){
-                        $('.block-content.moveToNextScene').fadeOut(900);
-                        setTimeout2 = setTimeout(function (){
-                            mySwiper.slideNext();
-                        }, 800);
-                    }, 1300);
-                }
-                if (swiper.activeIndex == 0) {
-                    $('.scene02 .block-content').removeClass('moveToNextScene');
-                    $('.scene02 .block-content').show();
-                    clearTimeout(setTimeout1);
-                    clearTimeout(setTimeout2);
-                }
-                if (swiper.activeIndex == 2) {
-                    $('.scene02 .block-content').removeClass('moveToNextScene');
-                    $('.scene02 .block-content').show();
-                    clearTimeout(setTimeout1);
-                    clearTimeout(setTimeout2);
-                    $('.page3-text').fadeIn(400);
-                    var page3 = setTimeout(function(){
-                        $('.page3').fadeIn(1400);
-                    },300)
-                }
-
-            });
+            var options = {
+                useEasing : true,
+                useGrouping : true,
+                separator : ',',
+                decimal : '.',
+                prefix : '',
+                suffix : ''
+            };
+            var demo = new CountUp("count_sum", 00, 77, 0, 5.5, options);
 
         </script>
+        <script src="js/common.js"></script>
     </div>
 
 </body>
