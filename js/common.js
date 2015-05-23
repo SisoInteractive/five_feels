@@ -68,7 +68,7 @@
         if (swiper.activeIndex == 7) {
             demo.start();
         }else{
-
+            demo.reset();
         }
 
         console.log(swiper.activeIndex)
