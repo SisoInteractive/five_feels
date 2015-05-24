@@ -565,8 +565,8 @@ select {
   top: 319px;
 }
 .swiper-slide .renwu {
-  top: 330px;
-  left: 30px;
+  top: 320px;
+  left: 54px;
 }
 .swiper-slide .f1 {
   left: 263px;
@@ -581,13 +581,13 @@ select {
   top: 223px;
 }
 .swiper-slide .logo {
-  top: 554px;
-  left: 43px;
+  top: 504px;
+  left: 48px;
 }
 .swiper-slide .down {
   left: 50%;
   margin-left: -50px;
-  top: 610px;
+  top: 575px;
 }
 .swiper-slide .zhishu {
   top: 530px;
@@ -595,8 +595,8 @@ select {
 }
 /* scene01 */
 .scene01 .zhishu {
-  top: 530px;
-  left: 220px;
+  top: 500px;
+  left: 230px;
   -webkit-animation: jello 7s infinite linear ;
 }
 .scene01 .s1-2 {
@@ -691,15 +691,15 @@ select {
 }
 .scene03 .page3 .eye_main {
   left: 50px;
-  top: 69px;
+  top: 59px;
 }
 .scene03 .page3 .eye_brow1 {
-  top: 64px;
+  top: 68px;
   left: 168px;
   -webkit-animation: brow2 5s infinite;
 }
 .scene03 .page3 .eye_brow2 {
-  top: 108px;
+  top: 113px;
   left: 77px;
   -webkit-animation: brow2 2s infinite;
 }
@@ -992,10 +992,105 @@ select {
   position: absolute;
   top: 464px;
 }
-.scene04 .page4 .ear_main {
+.scene04 .page4 .ear_1 {
+  top: 184px;
+  left: 100px;
+  -webkit-transform-origin: 100% 0;
+}
+.scene04 .page4 .ear_2 {
+  top: 96px;
+  left: 75px;
+}
+.scene04 .page4 .sheny {
+  width: 81px;
+  display: block;
   position: absolute;
-  left: 37px;
-  top: 89px;
+  top: 70px;
+  height: 207px;
+  background: url("../images/ehr/ear_line1.png") no-repeat;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 0;
+  left: 260px;
+  -webkit-animation: sheny 2s infinite;
+}
+.scene04 .page4 .ear_gear1 {
+  top: 174px;
+  left: 140px;
+  -webkit-animation: circle 5s infinite;
+}
+.scene04 .page4 .ear_gear2 {
+  top: 188px;
+  left: 128px;
+  -webkit-animation: circle 6s infinite;
+}
+.scene04 .page4 .ear_gear3 {
+  top: 193px;
+  left: 171px;
+  -webkit-animation: circle 7s infinite;
+}
+.scene04 .page4 .ear_headset {
+  top: 303px;
+  left: 131px;
+  -webkit-animation: baidong 3s infinite linear ;
+}
+.scene04 .page4 .ball_box2 {
+  left: 48px;
+  top: 300px;
+  position: absolute;
+  width: 80px;
+  height: 70px;
+}
+.scene04 .page4 .ball_box2 span {
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+}
+.scene04 .page4 .ball_box2 .y1 {
+  width: 3px;
+  height: 3px;
+  background: #2cb29d;
+  left: 22px;
+  -webkit-animation: bottomD 5s infinite linear;
+  top: 10px;
+}
+.scene04 .page4 .ball_box2 .y2 {
+  width: 3px;
+  height: 3px;
+  background: #28a993;
+  left: 15px;
+  top: 17px;
+  -webkit-animation: topD 3s infinite linear;
+}
+.scene04 .page4 .ball_box2 .y3 {
+  width: 5px;
+  height: 5px;
+  background: #b55399;
+  left: 32px;
+  top: 9px;
+}
+.scene04 .page4 .ball_box2 .y4 {
+  width: 7px;
+  height: 7px;
+  background: #348e66;
+  left: 26px;
+  top: 22px;
+  -webkit-animation: jello 3s infinite linear;
+}
+.scene04 .page4 .ball_box2 .y5 {
+  width: 9px;
+  height: 9px;
+  background: #7eb22f;
+  left: 33px;
+  top: 32px;
+  -webkit-animation: bounce 3s infinite linear;
+}
+.scene04 .page4 .ball_box2 .y6 {
+  width: 3px;
+  height: 3px;
+  background: #b55399;
+  left: 25px;
+  top: 42px;
 }
 .scene04 .page4-text {
   left: 220px;
@@ -1005,10 +1100,9 @@ select {
 .scene05 {
   margin-top: 3px!important;
 }
-.scene05 .page5 .nose_main {
-  position: absolute;
-  left: 37px;
-  top: 86px;
+.scene05 .page5 .nose_on {
+  top: 10px;
+  left: 10px;
 }
 .scene05 .page5-text {
   left: 270px;
@@ -1263,6 +1357,20 @@ select {
     background-image: url("../images/eye/yu6.png");
   }
 }
+@-webkit-keyframes sheny {
+  0% {
+    background-image: url("../images/ehr/ear_line1.png");
+  }
+  14.3% {
+    background-image: url("../images/ehr/ear_line2.png");
+  }
+  48.6% {
+    background-image: url("../images/ehr/ear_line3.png");
+  }
+  62.9% {
+    background-image: url("../images/ehr/ear_line4.png");
+  }
+}
 @-webkit-keyframes baidong {
   0% {
     -webkit-transform: rotateZ(0deg);
@@ -1300,6 +1408,20 @@ select {
   }
   60% {
     -webkit-transform: rotateZ(5deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+  }
+}
+@-webkit-keyframes baidong4 {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+  }
+  20% {
+    -webkit-transform: rotateZ(3deg);
+  }
+  60% {
+    -webkit-transform: rotateZ(-3deg);
   }
   100% {
     -webkit-transform: rotateZ(0deg);
@@ -1372,6 +1494,7 @@ select {
     -webkit-transform: translate(0px);
   }
   50% {
+    -webkit-transform: translate(1px);
     -webkit-transform: rotate(3deg);
   }
   100% {

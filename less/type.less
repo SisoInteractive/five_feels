@@ -491,8 +491,8 @@ select{
     top: 319px;
   }
   .renwu{
-    top: 330px;
-    left: 30px;
+    top: 320px;
+    left: 54px;
   }
   .f1{
     left: 263px;
@@ -507,13 +507,13 @@ select{
     top: 223px;
   }
   .logo{
-    top: 554px;
-    left: 43px;
+    top: 504px;
+    left: 48px;
   }
   .down{
     left: 50%;
     margin-left: -50px;
-    top: 610px;
+    top: 575px;
   }
   .zhishu{
     top: 530px;
@@ -524,8 +524,8 @@ select{
 /* scene01 */
 .scene01 {
   .zhishu{
-    top: 530px;
-    left: 220px;
+    top: 500px;
+    left: 230px;
     -webkit-animation:jello 7s infinite linear ;
   }
   .s1-2{
@@ -936,7 +936,6 @@ select{
     .ear_1{
       top: 184px;
       left: 100px;
-      -webkit-animation:baidong4 3s infinite linear ;
       -webkit-transform-origin: 100% 0;
     }
     .ear_2{
@@ -1050,16 +1049,80 @@ select{
 //page5
 .scene05{
   margin-top: 3px!important;
+  .sheny{
+    width: 54px;
+    display: block;
+    position: absolute;
+    top: 248px;
+    height: 207px;
+    background:url("../images/nose/nose_1.png") no-repeat;
+    background-size: 54px;
+    background-repeat: no-repeat;
+    background-position: 0;
+    left: 260px;
+    -webkit-animation: sheny2 2s infinite;
+  }
   .page5{
-    .nose_on{
-      top: 10px;
-      left: 10px;
+    .nose_onup{
+      top: 103px;
+      left: 194px;
     }
+    .nose_pattern3{
+      top: 323px;
+      left: 174px;
+    }
+    .nose_pattern2{
+      top:343px;
+      left: 194px;
+      -webkit-animation: circle 5s infinite linear;
+    }
+    .nose_people{
+      top:430px;
+      left: 174px;
+      -webkit-animation: baidong5 6s infinite;
+      -webkit-animation-fill-mode: forwards;
+      -webkit-animation-timing-function: linear;
+    }
+
+    .nose_on2{
+      top: 103px;
+      left: 84px;
+    }
+    .nose_on3{
+      top:267px;
+      left: 111px;
+    }
+    .nose_on4{
+      top:212px;
+      left: 203px;
+    }
+    .nose_pattern1{
+      top:323px;
+      left: 127px;
+      -webkit-animation: rotateSelfReverse 3s infinite;
+      -webkit-animation-fill-mode: forwards;
+      -webkit-animation-timing-function: linear;
+    }
+    .nose_drop{
+      top:209px;
+      left: 230px;
+      -webkit-animation: baidong5 3s infinite linear;
+    }
+    .nose_under{
+      top:351px;
+      left: 42px;
+    }
+    .nose_constellation{
+      top:401px;
+      left: 62px;
+      -webkit-animation: rightD 3s infinite linear;
+    }
+
   }
   //and page5
   .page5-text{
     left: 270px;
-    top: 464px;
+    top: 460px;
     position: absolute;
   }
   .page5-text01{
@@ -1183,9 +1246,9 @@ select{
   0% {   -webkit-transform: rotateZ(0deg)    }
   100% {        -webkit-transform: rotateZ(360deg)    }
 }
-@keyframes ccircle {
-  from {        transform: rotateZ(360deg)    }
-  to {        transform: rotateZ(0deg)    }
+@-webkit-keyframes circle2 {
+  from {   -webkit-transform: rotateZ(0deg)    }
+  to {   -webkit-transform: rotateZ(-360deg)    }
 }
 @-webkit-keyframes ccircle {
   from { -webkit-transform: rotateZ(360deg) }
@@ -1288,6 +1351,14 @@ select{
   62.9% {background-image: url("../images/ehr/ear_line4.png");}
 }
 
+@-webkit-keyframes sheny2{
+  0% {background-image: url("../images/nose/nose_1.png");}
+  14.3% {background-image: url("../images/nose/nose_2.png");}
+  48.6% {background-image:  url("../images/nose/nose_3.png");}
+  62.9% {background-image: url("../images/nose/nose_4.png");}
+  82.9% {background-image: url("../images/nose/nose_5.png");}
+}
+
 @-webkit-keyframes baidong{
   0%{ -webkit-transform: rotateZ(0deg) }
   20%{ -webkit-transform: rotateZ( -15deg) }
@@ -1311,6 +1382,12 @@ select{
 @-webkit-keyframes baidong4{
   0%{ -webkit-transform: rotateZ(0deg) }
   20%{ -webkit-transform: rotateZ( 3deg) }
+  60%{ -webkit-transform: rotateZ( -3deg) }
+  100%{ -webkit-transform: rotateZ(0deg) }
+}
+@-webkit-keyframes baidong5{
+  0%{ -webkit-transform: rotateZ(0deg) }
+  20%{ -webkit-transform: rotateZ( 7deg) }
   60%{ -webkit-transform: rotateZ( -3deg) }
   100%{ -webkit-transform: rotateZ(0deg) }
 }
@@ -1382,4 +1459,23 @@ select{
     -webkit-transform: translate(-5px);
   }
   100%   {-webkit-transform: translate(0px);}
+}
+
+@-webkit-keyframes rotateSelfReverse {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+  }
+  55% {
+    transform: rotate(-220deg);
+    -webkit-transform: rotate(-220deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
 }
