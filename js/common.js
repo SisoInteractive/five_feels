@@ -2,7 +2,7 @@
     var mySwiper = new Swiper('.swiper-container', {
         paginationClickable: true,
         direction: 'vertical',
-        speed: 1000,
+        speed: 800,
         spaceBetween: 100,
         noSwiping:true,
         parallax:true
@@ -65,13 +65,44 @@
             //mySwiper.slideTo(0, 1000, false);
         }
 
+        if (swiper.activeIndex == 3) {
+            $('.page4-text').fadeIn(400);
+            var page3 = setTimeout(function(){
+                $('.page4').fadeIn(1400);
+            },300)
+        }
+
+        if (swiper.activeIndex == 4) {
+            $('.page5-text').fadeIn(400);
+            $('.page5-text01').fadeIn(400);
+            var page3 = setTimeout(function(){
+                $('.page5').fadeIn(1400);
+            },300)
+        }
+
+        if (swiper.activeIndex == 5) {
+            $('.page6-text').fadeIn(400);
+            var page3 = setTimeout(function(){
+                $('.page6').fadeIn(1400);
+            },300)
+        }
+
+        if (swiper.activeIndex == 6) {
+            $('.page7-text').fadeIn(400);
+            var page3 = setTimeout(function(){
+                $('.page7').fadeIn(1400);
+            },300)
+        }
+
         if (swiper.activeIndex == 7) {
             demo.start();
+            demo2.start();
         }else{
             demo.reset();
+            demo2.reset();
+
         }
 
         console.log(swiper.activeIndex)
     });
-
 

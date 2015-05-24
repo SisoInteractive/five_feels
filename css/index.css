@@ -469,123 +469,136 @@ select {
   position: absolute;
 }
 .swiper-slide .wangzuo {
-  top: 117px;
-  left: 89px;
+  top: 40px;
+  left: 111px;
 }
 .swiper-slide .wangyou {
-  left: 160px;
-  top: 122px;
+  left: 170px;
+  top: 40px;
 }
 .swiper-slide .chushang {
-  top: 199px;
-  left: 122px;
+  top: 108px;
+  left: 142px;
 }
 .swiper-slide .chuxia {
-  top: 228px;
-  left: 127px;
+  top: 136px;
+  left: 145px;
 }
 .swiper-slide .fengtou {
-  left: 186px;
-  top: 205px;
+  left: 193px;
+  top: 108px;
 }
 .swiper-slide .fengxia {
-  left: 206px;
-  top: 241px;
+  left: 208px;
+  top: 144px;
 }
 .swiper-slide .touzuo {
-  left: 104px;
-  top: 287px;
+  left: 124px;
+  top: 180px;
 }
 .swiper-slide .touyou {
-  top: 293px;
-  left: 155px;
+  top: 198px;
+  left: 165px;
 }
 .swiper-slide .s1 {
-  top: 221px;
-  left: 95px;
+  top: 131px;
+  left: 115px;
 }
 .swiper-slide .s1-2 {
-  top: 237px;
-  left: 110px;
+  top: 137px;
+  left: 125px;
 }
 .swiper-slide .s1-3 {
-  top: 239px;
-  left: 98px;
+  top: 139px;
+  left: 108px;
 }
 .swiper-slide .s1-4 {
-  top: 256px;
+  top: 156px;
   left: 112px;
 }
 .swiper-slide .s1-5 {
-  top: 262px;
-  left: 116px;
+  top: 162px;
+  left: 120px;
 }
 .swiper-slide .s2 {
-  top: 246px;
-  left: 78px;
+  top: 146px;
+  left: 83px;
 }
 .swiper-slide .z1 {
-  top: 260px;
+  top: 160px;
   left: 103px;
 }
 .swiper-slide .w1 {
-  top: 157px;
-  left: 78px;
+  top: 76px;
+  left: 99px;
 }
 .swiper-slide .w1-2 {
-  top: 170px;
-  left: 78px;
+  top: 88px;
+  left: 93px;
 }
 .swiper-slide .w1-3 {
-  top: 173px;
-  left: 84px;
+  top: 92px;
+  left: 103px;
 }
 .swiper-slide .w1-4 {
-  top: 179px;
-  left: 84px;
+  top: 97px;
+  left: 103px;
 }
 .swiper-slide .yArr {
-  top: 385px;
-  left: 118px;
+  top: 258px;
+  left: 121px;
 }
 .swiper-slide .yArr-01 {
-  top: 376px;
+  top: 276px;
   left: 108px;
 }
 .swiper-slide .yArr-02 {
-  top: 398px;
+  top: 298px;
   left: 148px;
 }
 .swiper-slide .yArr-03 {
   left: 133px;
-  top: 413px;
+  top: 313px;
 }
 .swiper-slide .yArr-04 {
-  left: 137px;
-  top: 419px;
+  left: 147px;
+  top: 319px;
+}
+.swiper-slide .renwu {
+  top: 330px;
+  left: 30px;
 }
 .swiper-slide .f1 {
-  left: 271px;
-  top: 202px;
+  left: 263px;
+  top: 102px;
 }
 .swiper-slide .f2 {
   left: 74px;
-  top: 392px;
+  top: 252px;
 }
 .swiper-slide .text {
-  left: 253px;
-  top: 333px;
+  left: 246px;
+  top: 223px;
 }
 .swiper-slide .logo {
-  top: 454px;
-  left: 143px;
+  top: 554px;
+  left: 43px;
 }
 .swiper-slide .down {
   left: 50%;
   margin-left: -50px;
-  bottom: 10%;
+  top: 610px;
+}
+.swiper-slide .zhishu {
+  top: 530px;
+  left: 220px;
 }
 /* scene01 */
+.scene01 .zhishu {
+  top: 530px;
+  left: 220px;
+  -webkit-animation: jello 7s infinite linear ;
+}
 .scene01 .s1-2 {
   transform: rotate(12deg);
   -ms-transform: rotate(12deg);
@@ -661,9 +674,39 @@ select {
   -webkit-animation: xuanZ 3s infinite linear;
 }
 /* scene03 */
+.scene03 .page3 .eye_ball {
+  top: 228px;
+  left: 126px;
+  -webkit-animation: eye_ball 5s infinite linear;
+}
+.scene03 .page3 .eye_chip {
+  top: 260px;
+  left: 150px;
+  -webkit-animation: eye_ball 4s infinite linear;
+}
+.scene03 .page3 .eye_dish {
+  top: 228px;
+  left: 180px;
+  -webkit-animation: eye_ball 6s infinite linear;
+}
 .scene03 .page3 .eye_main {
   left: 50px;
   top: 69px;
+}
+.scene03 .page3 .eye_brow1 {
+  top: 64px;
+  left: 168px;
+  -webkit-animation: brow2 5s infinite;
+}
+.scene03 .page3 .eye_brow2 {
+  top: 108px;
+  left: 77px;
+  -webkit-animation: brow2 2s infinite;
+}
+.scene03 .page3 .eye_brow3 {
+  top: 181px;
+  left: 250px;
+  -webkit-animation: brow2 4s infinite;
 }
 .scene03 .page3 .eye_xuehua {
   left: 140px;
@@ -683,7 +726,6 @@ select {
 .scene03 .page3 .eye_xyan {
   left: 89px;
   top: 209px;
-  -webkit-animation: jello 4s infinite;
 }
 .scene03 .page3 .eye_yu {
   left: 64px;
@@ -698,7 +740,6 @@ select {
 .scene03 .page3 .eye_wyj {
   left: 146px;
   top: 360px;
-  -webkit-animation: jello 3s infinite linear ;
 }
 .scene03 .page3 .eye_wyj2 {
   left: 104px;
@@ -736,7 +777,6 @@ select {
 .scene03 .page3 .eye_fdj {
   left: 273px;
   top: 333px;
-  -webkit-animation: baidong2 4s infinite ease;
 }
 .scene03 .page3 .eye_sj1 {
   left: 314px;
@@ -1007,19 +1047,33 @@ select {
   position: absolute;
 }
 .scene08 {
-  margin-top: 14px!important;
+  margin-top: 10px!important;
 }
 .scene08 .page8 .Tail {
   left: 80px ;
-  top: 60px;
+  top: 234px;
+}
+.scene08 .page8 .Tail_top {
+  top: 63px;
+  left: 52px;
 }
 .scene08 .page8 #count_sum {
   color: #f2ebdb;
-  font-size: 73px;
-  top: 78px;
+  font-size: 66px;
+  top: 84px;
   position: absolute;
   z-index: 10;
-  left: 142px;
+  left: 84px;
+  font-weight: bold;
+  font-family: '微软雅黑 Bold';
+}
+.scene08 .page8 #count_sum2 {
+  color: #555;
+  font-size: 20px;
+  top: 143px;
+  position: absolute;
+  z-index: 10;
+  left: 298px;
   font-weight: bold;
   font-family: '微软雅黑 Bold';
 }
@@ -1151,28 +1205,28 @@ select {
     transform: none;
   }
   22.2% {
-    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
-    transform: skewX(-12.5deg) skewY(-12.5deg);
+    -webkit-transform: skewX(-10.5deg) skewY(-10.5deg);
+    transform: skewX(-10.5deg) skewY(-10.5deg);
   }
   33.3% {
-    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
-    transform: skewX(6.25deg) skewY(6.25deg);
+    -webkit-transform: skewX(5.25deg) skewY(5.25deg);
+    transform: skewX(5.25deg) skewY(5.25deg);
   }
   44.4% {
     -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
     transform: skewX(-3.125deg) skewY(-3.125deg);
   }
   55.5% {
-    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
-    transform: skewX(1.5625deg) skewY(1.5625deg);
+    -webkit-transform: skewX(1.3625deg) skewY(1.3625deg);
+    transform: skewX(1.5625deg) skewY(1.3625deg);
   }
   66.6% {
-    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
-    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    -webkit-transform: skewX(-0.68125deg) skewY(-0.68125deg);
+    transform: skewX(-0.68125deg) skewY(-0.68125deg);
   }
   77.7% {
-    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
-    transform: skewX(0.390625deg) skewY(0.390625deg);
+    -webkit-transform: skewX(0.290625deg) skewY(0.290625deg);
+    transform: skewX(0.290625deg) skewY(0.290625deg);
   }
   88.8% {
     -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
@@ -1312,4 +1366,26 @@ select {
 }
 .swiper-slide {
   margin-top: -15px;
+}
+@-webkit-keyframes brow2 {
+  0% {
+    -webkit-transform: translate(0px);
+  }
+  50% {
+    -webkit-transform: rotate(3deg);
+  }
+  100% {
+    -webkit-transform: translate(0px);
+  }
+}
+@-webkit-keyframes eye_ball {
+  0% {
+    -webkit-transform: translate(0px);
+  }
+  50% {
+    -webkit-transform: translate(-5px);
+  }
+  100% {
+    -webkit-transform: translate(0px);
+  }
 }
