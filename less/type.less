@@ -1697,7 +1697,8 @@ select{
 }
 
 .rotateOut {
-  -webkit-transform:rotateZ(300deg) scale(0.1)!important;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transform:rotateZ(720deg) scale(0.1)!important;
   position: relative;
   height: 600px;
   display: block!important;
@@ -1705,8 +1706,10 @@ select{
 }
 
 .rotateIn {
-  -webkit-transform:rotateZ(-360deg) scale(1)!important;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transform:rotateZ(-720deg) scale(1)!important;
   position: absolute;
+  opacity: 1!important;
   height: 600px;
   display: block!important;
 }
@@ -1716,15 +1719,19 @@ select{
 .rotateIn-box{
   -webkit-transform:rotateZ(1deg);
   position: relative;
-  -webkit-transition:all 1s;
+  -webkit-transition:all 0.6s;
   height: 600px;
+  width: 375px;
   display: block;
+  z-index: 999;
 }
 
 .two-box{
   position: absolute;
   top: 0px;
+  width: 375px;
   left: 0px;
-  -webkit-transform:rotateZ(0deg) scale(0);
-  -webkit-transition:all 1s;
+  opacity: 0;
+  -webkit-transform:rotateZ(1deg) scale(0.1);
+  -webkit-transition:all 0.6s;
 }

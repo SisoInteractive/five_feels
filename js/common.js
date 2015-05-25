@@ -98,7 +98,7 @@
                 $('.page5').fadeIn(1400);
             },300)
             $('.page6-text').hide();
-            $('.page6').fadeOut(100);
+            $('.page6').hide();
         }
 
         if (swiper.activeIndex == 5) {
