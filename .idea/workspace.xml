@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="290d7115-ea2f-456f-9941-2b3f3e36ac55" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/hand/hand_main.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mouth/mouth_main.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/scene/renwu.png" afterPath="$PROJECT_DIR$/images/scene/renwu.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/type.less" afterPath="$PROJECT_DIR$/less/type.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -37,8 +32,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.23774955" vertical-offset="1349" max-vertical-offset="8500">
-                  <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="336" selection-end-column="22" />
+                <state vertical-scroll-proportion="0.6930946" vertical-offset="1349" max-vertical-offset="8500">
+                  <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
                   <folding>
                     <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -106,8 +101,8 @@
           <file leaf-file-name="type.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/less/type.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.44064748" vertical-offset="24575" max-vertical-offset="33320">
-                  <caret line="1241" column="13" selection-start-line="1241" selection-start-column="13" selection-end-line="1241" selection-end-column="13" />
+                <state vertical-scroll-proportion="0.8989899" vertical-offset="24624" max-vertical-offset="33320">
+                  <caret line="1249" column="14" selection-start-line="1249" selection-start-column="14" selection-end-line="1249" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -346,7 +341,7 @@
     <layout>
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41304347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23401535" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23323615" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -927,18 +922,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/type.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="11907" max-vertical-offset="33320">
-          <caret line="601" column="12" selection-start-line="601" selection-start-column="12" selection-end-line="601" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23774955" vertical-offset="1349" max-vertical-offset="8500">
-          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="336" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.6930946" vertical-offset="1349" max-vertical-offset="8500">
+          <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -968,6 +955,14 @@
             <element signature="n#style#0;n#div#0;n#div#6;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#6;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/type.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8989899" vertical-offset="24624" max-vertical-offset="33320">
+          <caret line="1249" column="14" selection-start-line="1249" selection-start-column="14" selection-end-line="1249" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
