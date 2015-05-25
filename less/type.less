@@ -1137,11 +1137,83 @@ select{
 .scene06{
   margin-top: -6px!important;
   .page6{
-    .mouth_main{
-      position: absolute;
-      left: 39px;
-      top: 84px;
+    .mouth_1{
+      top: 69px;
+      left: 45px;
     }
+    .mouth_1bo{
+      top: 173px;
+      left: 164px;
+    }
+    .mouth_2{
+      top: 198px;
+      left: 51px;
+    }
+    .mouth_3{
+      top: 334px;
+      left: 102px;
+    }
+    .mouth_4{
+      top: 178px;
+      left: 192px;
+    }
+    .mouth_5{
+      top: 168px;
+      left: 243px;
+    -webkit-animation: baidong6 4s infinite ease;
+      -webkit-transform-origin: 50% 0;
+    }
+    .mouth_6{
+      top: 384px;
+      left: 143px
+    }
+
+    .mouth_lemon1{
+      top: 292px;
+      left: 46px;
+      -webkit-animation: baidong 4s infinite ease;
+      -webkit-transform-origin: 50% 0;
+    }
+    .mouth_lemon2{
+      top: 269px;
+      left: 91px;
+    -webkit-animation: xuanZ 3s infinite linear;
+      -webkit-animation-fill-mode: forwards;
+      -webkit-animation-timing-function: linear;
+    }
+    .mouth_mike{
+      top: 319px;
+      left: 165px;
+    -webkit-animation: baidong 4s infinite ease;
+      -webkit-transform-origin: 50% 100%;
+    }
+    .mouth_people{
+      top: 259px;
+      left: 235px;
+    -webkit-animation: bounce 4s infinite ease;
+    }
+
+    .mouth_gear1{
+      top: 356px;
+      left: 165px;
+    }
+    .mouth_gear2{
+      top: 366px;
+      left: 175px;
+    }
+
+    .mouth_red{
+      top: 420px;
+      left: 183px;
+      -webkit-animation: topD 4s infinite ease;
+    }
+    .mouth_green{
+      top: 444px;
+      left: 182px;
+      -webkit-animation: bottomD 11s infinite ease;
+    }
+
+
   }
   //and page6
   .page6-text{
@@ -1156,10 +1228,75 @@ select{
 .scene07{
   margin-top:10px!important;
   .page7{
-    .mouth_main{
+    .hand_under1{
+      left: 32px;
+      top: 172px;
+      -webkit-animation: baidong6 6s infinite;
+    }
+    .hand_on1{
+      left: 142px;
+      top: 64px;
+    }
+    .hand_under2{
+      left:112px;
+      top: 357px;
+    }
+    .hand_on2{
+      left: 210px;
+      top: 109px;
+    }
+    .hand_on3{
+      left: 122px;
+      top: 205px;
+    }
+    .hand_under3{
+      left: 186px;
+      top: 298px;
+    }
+    .hand_tencer{
+      top: 314px;
+      left: 115px;
+      -webkit-animation: down_d 6s infinite;
+    }
+    .hand_day{
+      top: 304px;
+      left: 135px;
+      -webkit-animation: down_d 10s infinite;
+    }
+    
+    .hand-touch{
+      background: #000;
       position: absolute;
-      left: 39px;
-      top: 84px;
+      width: 91px;
+      top:66px;
+      left: 170px;
+      height: 91px;
+      background: url("../images/hand/hand_touch1.png") no-repeat;
+      background-size: 92px;
+      -webkit-animation: touch 2s infinite;
+    }
+
+    .hand-pubu{
+      display: block;
+      position: absolute;
+      width:117px;
+      top:263px;
+      left: 123px;
+      height: 68px;
+      background: url("../images/hand/hand_1.png") no-repeat center;
+      background-position: left 0;
+      -webkit-background-size: 117px;
+      -webkit-animation: pubu 7s infinite;
+    }
+    .hand_balloon{
+      top: 375px;
+      left: 275px;
+    -webkit-animation: down_d2 8s infinite;
+    }
+    .hand_diamond{
+      top: 235px;
+      left: 174px;
+      -webkit-animation: scale2 3s infinite;
     }
   }
   //and page7
@@ -1261,8 +1398,8 @@ select{
 }
 
 @-webkit-keyframes up_d {
-  from {        transform: translate(-0px,0px)    }
-  to {        transform: translate(-5px,12px)    }
+  from {        -webkit-transform: translate(-0px,0px)    }
+  to {        -webkit-transform: translate(-5px,12px)    }
 }
 
 .down_{
@@ -1270,8 +1407,20 @@ select{
 }
 
 @-webkit-keyframes down_d {
-  from {        transform: translate(0px,0px)    }
-  to {        transform: translate(5px,-12px)      }
+  from {        -webkit-transform: translate(0px,0px)    }
+  to {        -webkit-transform: translate(5px,-12px)      }
+}
+
+@-webkit-keyframes down_d {
+  10% {        -webkit-transform: translate(0px,0px)    }
+  50% {        -webkit-transform: translate(10px,0px)      }
+  100% {        -webkit-transform: translate(0px,0px)      }
+}
+
+@-webkit-keyframes down_d2 {
+  10% {        -webkit-transform: translate(0px,0px)    }
+  50% {        -webkit-transform: translate(0px,10px)      }
+  100% {        -webkit-transform: translate(0px,0px)      }
 }
 
 //pulse
@@ -1333,6 +1482,9 @@ select{
   }
 }
 
+
+
+
 @-webkit-keyframes xiayu{
   0% {background-image: url("../images/eye/yu1.png");}
   14.3% {background-image: url("../images/eye/yu1.png");}
@@ -1342,6 +1494,18 @@ select{
   71.5% {background-image: url("../images/eye/yu.png");}
   85.5% {background-image: url("../images/eye/yu6.png");}
   95.5% {background-image: url("../images/eye/yu6.png");}
+}
+@-webkit-keyframes touch{
+  0% {background-image: url("../images/hand/hand_touch1.png");}
+  14.3% {background-image: url("../images/hand/hand_touch2.png");}
+  28.6% {background-image:  url("../images/hand/hand_touch3.png");}
+  42.9% {background-image: url("../images/hand/hand_touch4.png");}
+}
+@-webkit-keyframes pubu{
+  0% {background-image: url("../images/hand/hand_1.png");}
+  14.3% {background-image: url("../images/hand/hand_2.png");}
+  42.9% {background-image: url("../images/hand/hand_4.png");}
+  56.9% {background-image: url("../images/hand/hand_5.png");}
 }
 
 @-webkit-keyframes sheny{
@@ -1363,6 +1527,13 @@ select{
   0%{ -webkit-transform: rotateZ(0deg) }
   20%{ -webkit-transform: rotateZ( -15deg) }
   60%{ -webkit-transform: rotateZ( 15deg) }
+  100%{ -webkit-transform: rotateZ(0deg) }
+}
+
+@-webkit-keyframes baidong6{
+  0%{ -webkit-transform: rotateZ(0deg) }
+  20%{ -webkit-transform: rotateZ( -2deg) }
+  60%{ -webkit-transform: rotateZ( -5deg) }
   100%{ -webkit-transform: rotateZ(0deg) }
 }
 
@@ -1451,6 +1622,13 @@ select{
   }
   100%   {-webkit-transform: translate(0px);}
 }
+@-webkit-keyframes scale2 {
+  0%   {-webkit-transform: translate(0px);}
+  50%  {
+    -webkit-transform: scale(1.4)
+  }
+  100%   {-webkit-transform: translate(0px);}
+}
 
 
 @-webkit-keyframes eye_ball {
@@ -1460,6 +1638,8 @@ select{
   }
   100%   {-webkit-transform: translate(0px);}
 }
+
+
 
 @-webkit-keyframes rotateSelfReverse {
   0% {

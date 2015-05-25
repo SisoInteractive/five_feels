@@ -78,6 +78,8 @@
             var page3 = setTimeout(function(){
                 $('.page5').fadeIn(1400);
             },300)
+            $('.page6-text').hide();
+            $('.page6').hide();
         }
 
         if (swiper.activeIndex == 5) {
