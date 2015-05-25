@@ -1312,6 +1312,10 @@ select{
 //scene08
 .scene08{
   margin-top:10px!important;
+  .logo2{
+    top: 410px;
+    left: 70px;
+  }
   .page8{
     .Tail{
       left:80px ;
@@ -1658,4 +1662,69 @@ select{
     transform: rotate(-360deg);
     -webkit-transform: rotate(-360deg);
   }
+}
+
+
+@-webkit-keyframes rotateIn1 {
+  0% {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transform:rotate(360deg) scale(0.2);
+    opacity: 0;
+    -webkit-transform:;
+  }
+
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform:rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotateOut {
+  0% {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transform:rotate(360deg) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform:rotate(0deg) scale(0.1);
+    opacity: 0;
+  }
+}
+
+.rotateOut {
+  -webkit-transform:rotateZ(300deg) scale(0.1)!important;
+  position: relative;
+  height: 600px;
+  display: block!important;
+  opacity: 0;
+}
+
+.rotateIn {
+  -webkit-transform:rotateZ(-360deg) scale(1)!important;
+  position: absolute;
+  height: 600px;
+  display: block!important;
+}
+
+
+
+.rotateIn-box{
+  -webkit-transform:rotateZ(1deg);
+  position: relative;
+  -webkit-transition:all 1s;
+  height: 600px;
+  display: block;
+}
+
+.two-box{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-transform:rotateZ(0deg) scale(0);
+  -webkit-transition:all 1s;
 }

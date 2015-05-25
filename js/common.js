@@ -24,8 +24,20 @@
         clearTimeout(setTimeout2);
     });
 
-    mySwiper.on('Click', function(swiper){
-        alert(1)
+    $('.rotateIn-box').click(function(){
+        $(this).removeClass("rotateIn");
+        $(this).addClass("rotateOut");
+        $(this).parent().nextAll('.two-box').removeClass("rotateOut");
+        $(this).parent().nextAll('.two-box').addClass("rotateIn");
+        $(this).parent().nextAll('.pageText').hide();
+    })
+
+    $('.two-box').click(function(){
+        $(this).removeClass("rotateIn");
+        $(this).addClass("rotateOut");
+        $(this).prevAll('.page3').children('.rotateIn-box').removeClass("rotateOut");
+        $(this).prevAll('.page3').children('.rotateIn-box').addClass("rotateIn");
+        $(this).prevAll('.pageText').show();
     })
 
     mySwiper.on('onTransitionEnd', function (swiper){
