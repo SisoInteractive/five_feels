@@ -35,12 +35,14 @@
     $('.two-box').click(function(){
         $(this).removeClass("rotateIn");
         $(this).addClass("rotateOut");
-        $(this).prevAll('.page3').children('.rotateIn-box').removeClass("rotateOut");
-        $(this).prevAll('.page3').children('.rotateIn-box').addClass("rotateIn");
+        $(this).prevAll('.pageBox').children('.rotateIn-box').removeClass("rotateOut");
+        $(this).prevAll('.pageBox').children('.rotateIn-box').addClass("rotateIn");
         $(this).prevAll('.pageText').show();
     })
 
     mySwiper.on('onTransitionEnd', function (swiper){
+
+
 
         if (swiper.activeIndex == 1) {
 
@@ -121,7 +123,10 @@
             demo2.reset();
 
         }
-
+        $('.rotateIn-box').removeClass('rotateOut');
+        $('.rotateIn-box').removeClass('rotateIn');
+        $('.two-box').removeClass('rotateOut');
+        $('.two-box').removeClass('rotateIn');
         console.log(swiper.activeIndex)
     });
 
