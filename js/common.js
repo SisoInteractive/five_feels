@@ -2,10 +2,11 @@
     var mySwiper = new Swiper('.swiper-container', {
         paginationClickable: true,
         direction: 'vertical',
-        speed: 800,
+        speed: 700,
         spaceBetween: 100,
         noSwiping:true,
-        parallax:true
+        parallax:true,
+        mousewheelControl : true
     });
 
     var startX;
@@ -23,6 +24,10 @@
         clearTimeout(setTimeout2);
     });
 
+    mySwiper.on('Click', function(swiper){
+        alert(1)
+    })
+
     mySwiper.on('onTransitionEnd', function (swiper){
 
         if (swiper.activeIndex == 1) {
@@ -31,10 +36,10 @@
             $('.block-content.moveToNextScene').show();
             $('.scene02 .block-content').show();
             setTimeout1 = setTimeout(function (){
-                $('.block-content.moveToNextScene').fadeOut(900);
+                $('.block-content.moveToNextScene').fadeOut(600);
                 setTimeout2 = setTimeout(function (){
                     mySwiper.slideNext();
-                }, 800);
+                }, 500);
             }, 1300);
 
             $('.page3-text').hide();
@@ -79,7 +84,7 @@
                 $('.page5').fadeIn(1400);
             },300)
             $('.page6-text').hide();
-            $('.page6').hide();
+            $('.page6').fadeOut(100);
         }
 
         if (swiper.activeIndex == 5) {

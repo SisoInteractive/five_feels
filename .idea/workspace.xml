@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="290d7115-ea2f-456f-9941-2b3f3e36ac55" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/type.less" afterPath="$PROJECT_DIR$/less/type.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -29,11 +31,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5911854">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6930946" vertical-offset="1349" max-vertical-offset="8500">
-                  <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
+                <state vertical-scroll-proportion="-7.4157305" vertical-offset="5980" max-vertical-offset="8500">
+                  <caret line="332" column="64" selection-start-line="332" selection-start-column="64" selection-end-line="332" selection-end-column="64" />
                   <folding>
                     <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -84,11 +86,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/common.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1447" max-vertical-offset="2320">
-                  <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+                <state vertical-scroll-proportion="0.80856127" vertical-offset="1040" max-vertical-offset="2420">
+                  <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -101,8 +103,8 @@
           <file leaf-file-name="type.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/less/type.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8989899" vertical-offset="24624" max-vertical-offset="33320">
-                  <caret line="1249" column="14" selection-start-line="1249" selection-start-column="14" selection-end-line="1249" selection-end-column="14" />
+                <state vertical-scroll-proportion="0.9086022" vertical-offset="24064" max-vertical-offset="33320">
+                  <caret line="1237" column="13" selection-start-line="1237" selection-start-column="13" selection-end-line="1237" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -151,7 +153,7 @@
     <option name="x" value="1554" />
     <option name="y" value="-67" />
     <option name="width" value="1393" />
-    <option name="height" value="781" />
+    <option name="height" value="969" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -336,12 +338,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1554" y="-67" width="1393" height="781" extended-state="6" />
+    <frame x="1554" y="-67" width="1393" height="969" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41304347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23323615" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23323615" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -914,18 +916,18 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js">
+    <entry file="file://$PROJECT_DIR$/less/type.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1447" max-vertical-offset="2320">
-          <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="11907" max-vertical-offset="33320">
+          <caret line="601" column="12" selection-start-line="601" selection-start-column="12" selection-end-line="601" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6930946" vertical-offset="1349" max-vertical-offset="8500">
-          <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
+        <state vertical-scroll-proportion="-7.4157305" vertical-offset="5980" max-vertical-offset="8500">
+          <caret line="332" column="64" selection-start-line="332" selection-start-column="64" selection-end-line="332" selection-end-column="64" />
           <folding>
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -958,10 +960,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/type.less">
+    <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8989899" vertical-offset="24624" max-vertical-offset="33320">
-          <caret line="1249" column="14" selection-start-line="1249" selection-start-column="14" selection-end-line="1249" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.80856127" vertical-offset="1040" max-vertical-offset="2420">
+          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
           <folding />
         </state>
       </provider>
